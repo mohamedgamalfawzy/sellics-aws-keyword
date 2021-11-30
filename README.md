@@ -1,6 +1,6 @@
 # Sellics Amazon Keyword Weight Estimation:
 
-##Overview:
+## Overview:
 
 A microservice with a single endpoint to estimate the search volume of any keyword received (how often Amazon customers search for that **exact** keyword).
 
@@ -17,13 +17,13 @@ As a result of the assumptions above I've used the below algorithm:
 - Calculate all the ratios/percentages returned and get an average with the original word length.
 - The  above algorithm will return the final score based on the above explained steps.
 
-##Do you think the (*hint) that we gave you earlier is correct and if so - why?
+## Do you think the (*hint) that we gave you earlier is correct and if so - why?
 I don't think the ranking on amazon is insignificant as Amazon A9 algorithm will rank a product with a strong sales history will be higher. However, the relevancy of the keyword that a user typed can affect the ranking to match the user query.  
-##How precise do you think your outcome is and why?
+## How precise do you think your outcome is and why?
 This is not accurate 100% as the api does not compare with all the datasets related. The API is only performing search-volume calculations based on what Amazon provide us and this is can be variable.
 However, based on the small dataset the Estimate API receiving, it can be accurate with an 85% percent accuracy. In addition to it, another aspect can affect the accuracy, the estimate does not analyze the past search patterns which is important to volume the keywords.
 
-##Local development setup
+## Local development setup
 
 - Please go to the root directory of the project and run this command
 `docker-compose up`
