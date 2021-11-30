@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  sellics-aws-keyword:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        service: sellics-aws-keyword
+        version: 1.0.0
+    ports:
+      - 8080:8080
+    restart: on-failure

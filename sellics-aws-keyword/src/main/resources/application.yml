@@ -1,0 +1,8 @@
+server:
+  port: 8080
+  servlet:
+    session:
+      timeout: 60s
+aws:
+  host: "https://completion.amazon.com"
+  resource: "/api/2017/suggestions"
